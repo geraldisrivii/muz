@@ -14,6 +14,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH }}
 
+      - name: Create .env file for frontend
+        run: |
+          cd /var/www
+          cp ./apps/frontend/template.env ./apps/frontend/.env
+          envsubst < ./apps/frontend/template.env > ./apps/frontend/.env
+
       - name: 🚀 Deploy via SSH
         run: |
           ssh -o StrictHostKeyChecking=no ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }} << 'EOF'
