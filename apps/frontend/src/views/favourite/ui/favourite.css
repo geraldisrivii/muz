@@ -1,0 +1,34 @@
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 33px;
+  margin-top: 20px;
+}
+
+.favorite-item {
+  position: relative;
+  width: 19;
+  padding: 15px;
+  border-radius: 8px;
+  
+}
+
+.remove-favorite {
+  margin-top: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty-favorites p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}

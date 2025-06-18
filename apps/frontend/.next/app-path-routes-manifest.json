@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/admin/page": "/admin",
+  "/checkout/page": "/checkout",
+  "/favourite/page": "/favourite",
+  "/aboutUs/page": "/aboutUs",
+  "/catalog/page": "/catalog",
+  "/login/page": "/login",
+  "/new/page": "/new",
+  "/page": "/",
+  "/register/page": "/register",
+  "/profile/page": "/profile",
+  "/tovar/[title]/page": "/tovar/[title]",
+  "/cart/page": "/cart"
+}

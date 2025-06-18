@@ -1,0 +1,94 @@
+.preview {
+  text-align: center;
+  align-items: center;
+  max-width: 480px;
+  justify-content: center;
+}
+
+.Login {
+  padding-top: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  height: 690px;
+}
+
+.registration-cssave {
+  padding: 30px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-cssave form {
+  max-width: 800px;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.registration-cssave form h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.registration-cssave .create-account {
+  border-radius: 30px;
+  padding: 10px 70px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0098c8;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  max-width: 220px;
+  transition: all 0.2s ease-in-out;
+}
+
+.registration-cssave .create-account:hover {
+  background-color: #00a4d6;
+}
+
+@media (max-width: 576px) {
+  .registration-cssave form {
+    padding: 50px 20px;
+  }
+}
+
+.text-center {
+  font-size: 23px;
+}
+
+.form-group {
+  padding-top: 30px;
+}
+
+.form-control-item {
+  border: #f0f0f0 1.5px solid; /* Исходный цвет рамки */
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.3s ease; /* Плавная анимация смены цвета */
+}
+
+.form-control-item:focus {
+  border-color: #0098c8; /* Цвет рамки при фокусе */
+}
+
+.register-link span {
+   text-decoration: none;
+  color: #0098c8;
+  font-weight: 500;
+}
+
+.register {
+  color: black;
+  font-size: 14px;
+}

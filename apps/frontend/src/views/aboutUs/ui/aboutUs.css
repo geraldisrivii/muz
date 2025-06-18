@@ -1,0 +1,49 @@
+.about {
+  min-height: 710px;
+}
+
+.map {
+  display: flex;
+  padding-bottom: 21px;
+  display: flex;
+  justify-content: center;
+}
+
+.aftermap {
+  padding-top: 15px;
+}
+
+.aftermap p {
+  padding-bottom: 35px;
+  font-size: 20px;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+.last p {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+
+.span {
+  display: flex;
+  padding-bottom: 21px;
+  padding-top: 21px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.contact {
+  display: flex;
+  padding-bottom: 15px;
+  padding-top: 21px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.messagers2 {
+  display: flex;
+  column-gap: 10px;
+  padding-bottom: 35px;
+}

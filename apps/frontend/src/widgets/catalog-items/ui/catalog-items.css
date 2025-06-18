@@ -1,0 +1,122 @@
+.card {
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  width: 336px;
+  height: 540px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 0.01px 0.01px 6px rgba(0, 0, 0, 0.178); */
+  /* box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.178); */
+  transition: all 0.3s ease;
+  
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0.01px 0.01px 6px #5c5c5c;
+  /* rgba(0, 0, 0, 0.178) */
+  transform: translate(-0px, -10px);
+  transition: all 0.3s ease;
+}
+
+.favourite {
+  display: flex;
+  align-items: center;
+
+}
+.card p {
+  color: #868686;
+  padding-top: 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card span {
+  color: black;
+  font-size: 19px;
+  font-weight: 500;
+  padding-top: 11px;
+}
+
+.card b {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.categories {
+}
+
+.Products span {
+  display: flex;
+  padding-top: 21px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.Products a {
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.textBtn {
+  display: flex;
+  font-weight: 400;
+  font-size: 23px;
+  column-gap: 13px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.add {
+  position: absolute;
+  display: flex;
+  height: 42px;
+  width: 302px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s ease;
+
+  border-radius: 14px;
+  color: #e6e6e6;
+}
+
+.add:hover {
+  border-radius: 3px;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  width: 303px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.img2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  width: 303px;
+}
+
+.tovary {
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 12px;
+}
+
+.classes {
+}

@@ -1,0 +1,21 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/src/img/background/BGImage.png);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container2 {
+  max-width: 1835px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+img {
+  pointer-events: none;
+}
+  

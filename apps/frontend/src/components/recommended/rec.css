@@ -1,0 +1,24 @@
+.Recommendation {
+  display: flex;
+}
+
+.Recommendation ul {
+  display: flex;
+  column-gap: 56px;
+}
+
+.Recommendation img {
+  border-radius: 8px;
+}
+
+.Recommendation span {
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.rec-categories {
+  padding-bottom: 21px;
+}

@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/admin/page": "app/admin/page.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/favourite/page": "app/favourite/page.js",
+  "/aboutUs/page": "app/aboutUs/page.js",
+  "/catalog/page": "app/catalog/page.js",
+  "/login/page": "app/login/page.js",
+  "/new/page": "app/new/page.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/tovar/[title]/page": "app/tovar/[title]/page.js",
+  "/cart/page": "app/cart/page.js"
+}

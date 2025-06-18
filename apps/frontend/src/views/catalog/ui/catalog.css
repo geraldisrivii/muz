@@ -1,0 +1,28 @@
+.categories {
+}
+
+.categories span {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  padding: 20px 0;
+}
+.classes {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 65px;
+  flex-wrap: wrap;
+}
+
+.classes img {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}

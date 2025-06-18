@@ -1,0 +1,43 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Расстояние между кнопками */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  padding: 10px;
+  background-color: #f8f8f8; /* Светлый фон для выделения блока */
+  border-radius: 8px; /* Скруглённые углы */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень для объёма */
+}
+
+.categories button {
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border: none; /* Убираем рамки */
+  border-radius: 4px; /* Скруглённые углы кнопок */
+  background-color: #e0e0e0; /* Цвет фона кнопок */
+  color: #333; /* Тёмный цвет текста */
+  font-size: 14px; /* Размер текста */
+  cursor: pointer; /* Указатель при наведении */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Анимация при наведении */
+}
+
+.categories button:hover {
+  background-color: #d4d4d4; /* Более тёмный цвет при наведении */
+}
+
+.categories button.active {
+  background-color: #0098c8; /* Цвет активной кнопки */
+  color: white; /* Белый текст на активной кнопке */
+}
+
+.categories button:focus {
+  outline: none; /* Убираем обводку при фокусе */
+}
+
+.catspan {
+  padding-top: 21px;
+  font-weight: 600;
+  font-size: 25px;
+}

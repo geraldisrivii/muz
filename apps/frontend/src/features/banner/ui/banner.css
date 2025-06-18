@@ -1,0 +1,28 @@
+.banner {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 33px;
+
+}
+
+
+.btn-start {
+  display: flex;
+  margin-left: 35px;
+  line-height: 40px;
+  align-items: center;
+  border-radius: 21px;
+  width: 360px;
+  position: absolute;
+  height: 110px;
+  margin-top: -200px;
+}
+
+
+
+.arrow {
+  display: flex;
+  padding-right: 35px;
+}
+

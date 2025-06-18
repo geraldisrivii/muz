@@ -1,0 +1,64 @@
+.ex_content {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 160px;
+  column-gap: 110px;
+  align-items: center;
+}
+
+.ex_instruments {
+  display: flex;
+  column-gap: 40px;
+}
+
+.ex_instruments span {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.search {
+  width: 791px;
+  height: 42px;
+  padding-left: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px #0098c8;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.search .input {
+  width: 791px;
+  height: 42px;
+  display: flex;
+  text-align: center;
+}
+
+.searchbt button {
+  display: flex;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(#0098c8, #2ecfff);
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.metronom {
+  display: flex;
+  align-items: center;
+}
+.tuner {
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  padding: 9px 13px;
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+}

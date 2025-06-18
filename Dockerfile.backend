@@ -1,0 +1,11 @@
+FROM node:20-alpine
+
+WORKDIR /app/apps/backend
+
+
+COPY /apps/backend/package.json .
+RUN npm install -g yarn --force
+RUN yarn install
+
+COPY ./apps/backend /app/apps/backend
+COPY ./internal /app/internal

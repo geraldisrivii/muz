@@ -1,0 +1,11 @@
+{
+  "name": "@dapp/dto",
+  "version": "0.0.1",
+  "description": "DTO",
+  "types": "index.ts",
+  "main": "index.ts",
+  "private": true,
+  "dependencies": {
+    "viem": "^2.21.37"
+  }
+}

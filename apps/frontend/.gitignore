@@ -1,0 +1,4 @@
+node_modules
+dapp.code-workspace
+.data
+pgdata

@@ -1,0 +1,75 @@
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    volumes:
+      - ./internal:/app/internal
+    ports:
+      - "3000:3000"
+    command:
+      - sh
+      - -c
+      - |
+        yarn build && yarn start
+    restart: on-failure
+
+  backend:
+    container_name: backend
+    volumes:
+      - ./internal:/app/internal
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    command:
+      - sh
+      - -c
+      - |
+        yarn build && yarn start:prod
+    ports:
+      - "3002:3002"
+    restart: always
+
+  swag:
+    image: lscr.io/linuxserver/swag:latest
+    container_name: cool_swag
+    cap_add:
+      - NET_ADMIN
+    network_mode: host
+    environment:
+      - PUID=1001
+      - PGID=1001
+      - TZ=Asia/Omsk
+      - URL=accord-guitar.ru
+      - VALIDATION=http
+    volumes:
+      - ./swag:/config
+    ports:
+      - 443:443
+      - 80:80
+    restart: unless-stopped
+
+  mongo:
+    image: mongo
+    container_name: mongo_backend
+    restart: always
+    volumes:
+      - ./db_dumps/:/db_dumps
+      - ./pgdata:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: geraldisriviiA1
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express_backend
+    restart: always
+    ports:
+      - 8082:8081
+    environment:
+      #ME_CONFIG_MONGODB_SERVER: "nest"
+      ME_CONFIG_BASICAUTH_USERNAME: root
+      ME_CONFIG_BASICAUTH_PASSWORD: geraldisriviiA1
+      ME_CONFIG_MONGODB_URL: mongodb://root:geraldisriviiA1@mongo:27017/
+      ME_CONFIG_BASICAUTH: true
