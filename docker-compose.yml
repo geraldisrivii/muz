@@ -33,7 +33,6 @@ services:
 
   swag:
     image: lscr.io/linuxserver/swag:latest
-    container_name: cool_swag
     cap_add:
       - NET_ADMIN
     network_mode: host
