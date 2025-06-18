@@ -15,15 +15,13 @@ jobs:
           ssh-private-key: ${{ secrets.SSH }}
 
       - name: Create .env file for frontend
-        env:
-          API_URL: ${{ vars.API_URL }}
         run: |
           ssh -o StrictHostKeyChecking=no ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }} << 'EOF' 
             echo "✈️ make frontend .env"
 
             cd /var/www
 
-            echo "API_URL=${API_URL}" >> ./apps/frontend/.env
+            echo "API_URL=${{ vars.API_URL }}" >> ./apps/frontend/.env
           EOF
 
       - name: 🚀 Deploy via SSH
