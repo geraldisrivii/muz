@@ -6,7 +6,7 @@ export const fetchAuth = createAsyncThunk(
   async (params: { email: string; password: string }, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        process.env.NEXT_PUPLIC_API_URL + "/auth/login",
+        process.env.NEXT_PUBLIC_API_URL + "/auth/login",
         {
           method: "POST",
 
@@ -49,7 +49,7 @@ export const fetchRegister = createAsyncThunk(
   async (params: RegisterParams, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(
-        process.env.NEXT_PUPLIC_API_URL + "/auth/register",
+        process.env.NEXT_PUBLIC_API_URL + "/auth/register",
         {
           email: params.email,
           password: params.password,
@@ -68,7 +68,7 @@ export const fetchAuthMe = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        process.env.NEXT_PUPLIC_API_URL + "/auth/me"
+        process.env.NEXT_PUBLIC_API_URL + "/auth/me"
       );
       return data;
     } catch (err) {

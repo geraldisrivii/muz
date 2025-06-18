@@ -22,7 +22,7 @@ jobs:
             cd /var/www
             
             rm ./apps/frontend/.env
-            echo "NEXT_PUPLIC_API_URL=${{ vars.API_URL }}" >> ./apps/frontend/.env
+            echo "NEXT_PUBLIC_API_URL=${{ vars.API_URL }}" >> ./apps/frontend/.env
           EOF
 
       - name: 🚀 Deploy via SSH
