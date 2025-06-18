@@ -47,16 +47,19 @@ const Registration = () => {
 
   const onSubmitVerify = async (values) => {
     try {
-      const response = await fetch(process.env.API_URL + "/auth/email-verify", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          code: values.verificationCode,
-          email: registeredEmail,
-        }),
-      });
+      const response = await fetch(
+        process.env.NEXT_PUPLIC_API_URL + "/auth/email-verify",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            code: values.verificationCode,
+            email: registeredEmail,
+          }),
+        }
+      );
 
       const data = await response.json();
 
