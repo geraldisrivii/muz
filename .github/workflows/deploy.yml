@@ -21,7 +21,9 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }} << 'EOF'
              echo "✈️ make frontend .env"
 
-            cd /var/www
+            git reset --hard
+            git pull
+            
             cp /var/www/apps/frontend/template.env /var/www/apps/frontend/.env
             envsubst < /var/www/apps/frontend/template.env > /var/www/apps/frontend/.env
           EOF
@@ -32,10 +34,10 @@ jobs:
             echo "✈️ Pulling latest code..."
             cd /var/www
 
-            docker compose down
-            
             git reset --hard
             git pull
+
+            docker compose down
 
             docker compose up --build -d
 
