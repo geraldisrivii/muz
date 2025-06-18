@@ -18,14 +18,12 @@ jobs:
         env:
           API_URL: ${{ vars.API_URL }}
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }} << 'EOF'
-             echo "✈️ make frontend .env"
+          ssh -o StrictHostKeyChecking=no ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }} << 'EOF' 
+            echo "✈️ make frontend .env"
 
-            git reset --hard
-            git pull
-            
-            cp /var/www/apps/frontend/template.env /var/www/apps/frontend/.env
-            envsubst < /var/www/apps/frontend/template.env > /var/www/apps/frontend/.env
+            cd /var/www
+
+            echo "API_URL=${API_URL}" >> ./apps/frontend/.env
           EOF
 
       - name: 🚀 Deploy via SSH
